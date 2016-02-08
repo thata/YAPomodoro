@@ -28,8 +28,7 @@ class ViewController: NSViewController, PomodoroDelegate {
     }
     
     @IBAction func restDidPress(sender: AnyObject) {
-        let seconds = 5
-//        let seconds = 5 * 60
+        let seconds = 5 * 60
         startTimer(seconds)
     }
     
