@@ -28,7 +28,8 @@ class ViewController: NSViewController, PomodoroDelegate {
     }
     
     @IBAction func restDidPress(sender: AnyObject) {
-        let seconds = 5 * 60
+        let seconds = 5
+//        let seconds = 5 * 60
         startTimer(seconds)
     }
     
@@ -59,7 +60,7 @@ class ViewController: NSViewController, PomodoroDelegate {
     func pomodoroFinished(pomodoro: Pomodoro) {
         // 通知して
         let notification = NSUserNotification()
-        notification.title = "Pomodoro Finished"
+        notification.title = "Pomodoro Finished 🍅"
         notification.soundName = NSUserNotificationDefaultSoundName
         NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
         
@@ -76,7 +77,7 @@ class ViewController: NSViewController, PomodoroDelegate {
         }
         
         // 一時停止ボタンのラベルを初期化
-        self.suspendButton.title = "一時停止"
+        self.suspendButton.title = "🌙 一時停止"
         
         let pomodoro = Pomodoro(counter: seconds)
         pomodoro.delegate = self
@@ -97,7 +98,7 @@ class ViewController: NSViewController, PomodoroDelegate {
         }
         
         // 一時停止 -> 再開
-        self.suspendButton.title = "再開"
+        self.suspendButton.title = "☀️ 再開"
         
         // タイマーを停止
         timer.invalidate()
@@ -105,7 +106,7 @@ class ViewController: NSViewController, PomodoroDelegate {
     
     func resumeTimer() {
         // 再開 -> 一時停止
-        self.suspendButton.title = "一時停止"
+        self.suspendButton.title = "🌙 一時停止"
         
         // タイマー再開
         let interval = 1.0
