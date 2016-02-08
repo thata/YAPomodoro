@@ -38,6 +38,7 @@
 		7AD822201C68DC570008FB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AD822291C68DC8C0008FB3B /* Pomodoro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
 		7AD8222C1C68DCD30008FB3B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7AD8222F1C68E3550008FB3B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 				7AD8220B1C68DC570008FB3B /* YAPomodoro */,
 				7AD8221D1C68DC570008FB3B /* YAPomodoroTests */,
 				7AD8220A1C68DC570008FB3B /* Products */,
+				7AD8222F1C68E3550008FB3B /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
