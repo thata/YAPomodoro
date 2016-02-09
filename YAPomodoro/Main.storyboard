@@ -170,7 +170,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Fdl-cy-W3N"/>
                                 </constraints>
-                                <buttonCell key="cell" type="square" title="⚡️ 開始" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OqR-wD-GLB">
+                                <buttonCell key="cell" type="square" title="🕒 開始" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OqR-wD-GLB">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <connections>
@@ -196,7 +196,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KGE-k5-GbY"/>
                                 </constraints>
-                                <buttonCell key="cell" type="square" title="😴一時停止" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RW3-yv-VNO">
+                                <buttonCell key="cell" type="square" title="🌙 一時停止" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RW3-yv-VNO">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
