@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController, PomodoroDelegate {
+class ViewController: NSViewController, PomodoroDelegate, NSUserNotificationCenterDelegate {
     
     @IBOutlet weak var clockFaceLabel: NSTextField!
     @IBOutlet weak var suspendButton: NSButton!
@@ -18,6 +18,8 @@ class ViewController: NSViewController, PomodoroDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NSUserNotificationCenter.defaultUserNotificationCenter().delegate = self
     }
     
     // MARK: Actions
@@ -65,6 +67,14 @@ class ViewController: NSViewController, PomodoroDelegate {
         
         // タイマーを止める
         timer?.invalidate()
+    }
+    
+    // MARK: NSUserNotificationCenterDelegate
+    
+    func userNotificationCenter(center: NSUserNotificationCenter, shouldPresentNotification notification: NSUserNotification) -> Bool {
+        
+        // アプリがフォアグラウンドに表示されていてもプッシュ通知は表示すること
+        return true
     }
     
     // MARK: Private
